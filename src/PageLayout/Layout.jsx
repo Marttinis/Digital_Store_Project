@@ -3,6 +3,7 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 
 
+
 // Definindo o componente de layout
 const Layout = ({ children }) => {
   return (
@@ -11,7 +12,7 @@ const Layout = ({ children }) => {
       <Header />
 
       {/* Conteúdo dinâmico das páginas */}
-      {children}
+      {children} 
 
       {/* Componente do rodapé */}
       <Footer />

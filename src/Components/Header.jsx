@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Logo from "./Logo";
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -35,9 +36,9 @@ const Header = () => {
 
                 <img src="src\images\mini-cart.svg" alt="mini-cart" />
             </div>
-            <ul style={{ display: 'flex', alignItems: 'flex-start', gap: '20px', listStyle: 'none', textDecoration: 'underline' }} >
-                <li>Home</li>
-                <li>Produtos</li>
+            <ul style={{ display: 'flex', alignItems: 'flex-start', gap: '20px', listStyle: 'none' }} >
+                <li><Link to={"/"}>Home</Link></li>
+                <li><Link to={"/listaProdutos"}>Produtos</Link></li>
                 <li>Categoria</li>
                 <li>Meus pedidos</li>
             </ul>

@@ -1,15 +1,19 @@
-import { BrowserRouter, Route, Router } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import ProductListingPage from "../pages/ProductListingPage";
+import ProductViewPage from "../pages/ProductViewPage";
+import NotFound from "../pages/NotFound";
 
 const Paths = () => {
     return (
         <>
           <BrowserRouter>
-             <Router>
+             <Routes>
                  <Route path="/" element={<HomePage />} />
                  <Route path="/listaProdutos" element = {<ProductListingPage />} />
-             </Router>
+                 <Route path="/verProduto" element = {<ProductViewPage />} />
+                 <Route path="*" element = {<NotFound />}  />
+             </Routes>
           </BrowserRouter>
         </>
     );
