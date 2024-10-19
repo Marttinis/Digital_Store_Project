@@ -1,11 +1,13 @@
+import Gallery from "../Components/Gallery";
 import Layout from "../PageLayout/Layout";
 
 
 const HomePage = () => {
   return (
     <Layout>
+      <Gallery />
       <main>
-        <h1>Pagina principal</h1>
+
 
       </main>
 
