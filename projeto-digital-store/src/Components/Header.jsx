@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Logo from "./Logo";
+import Logo1 from "./Logo";
 
 
 const Header = () => {
@@ -11,7 +11,7 @@ const Header = () => {
             <div style={{ display: 'flex', textAlign: 'center', justifyContent: 'space-around', padding: '25px' }} >
 
 
-                <Logo />
+                <Logo1 />
 
                 <div className="d-flex mb-3" style={{ width: '559px', height: '60' }}>
                     <input
@@ -30,7 +30,7 @@ const Header = () => {
 
 
 
-                <button className="btn" style={{ backgroundColor: '#C92071', color: 'white', borderColor: '#C92071', width: '114px', height: '40px', fontWeight: 'bold', fontSize:'14px' }}>Entrar</button>
+                <button className="btn" style={{ backgroundColor: '#C92071', color: 'white', borderColor: '#C92071', width: '114px', height: '40px', fontWeight: 'bold', fontSize: '14px' }}>Entrar</button>
 
 
                 <img src="src\images\mini-cart.svg" alt="mini-cart" />
