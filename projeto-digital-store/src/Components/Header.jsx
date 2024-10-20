@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Logo1 from "./Logo";
-
+import { Logo1 } from "./Logo";
+//aqui alterei a logo, apesar de ter deixado a mesma imagem que já estava anteriormente
 
 const Header = () => {
     return (
