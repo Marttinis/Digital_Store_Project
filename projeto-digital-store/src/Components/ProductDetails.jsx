@@ -69,13 +69,55 @@ const ProdutoDetalhado = () => {
                     </div>
                 </section>
                 <section className="relacionados">
-                    <div style={{ display: 'flex', justifyContent: 'space-between', marginRight: '104px', alignItems: 'center' }}> <h4 style={{ fontFamily: 'Inter, sans-serif', fontWeight: '700', fontSize: '24px', color: '#474747' }}>Produtos Relacionados</h4> <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '18px', fontWeight: '400', lineHeight: '34px', color: '#C92071' }}>Ver todos <img src="src\images\Line.png" alt="" /></span></div>
-                    <ul style={{ listStyle: 'none', display: 'flex', }}>
-                        <li><div style={{ width: '292px', height: '321px', backgroundColor: '#FFFFFF' }}> <span style={{ backgroundColor: '#E7FF86', width: '96px', height: '32px', borderRadius: '29px', fontSize: '14px', fontFamily: 'Inter, sans-serif', fontWeight: '700' }}>30% OFF</span><img src="src\images\Tenis-relacionado.png" alt="Tenis branco, com detalhes preto e laranja" /></div></li>
-                        <li><div style={{ width: '292px', height: '321px', backgroundColor: '#FFFFFF' }}> <span style={{ backgroundColor: '#E7FF86', width: '96px', height: '32px', borderRadius: '29px', fontSize: '14px', fontFamily: 'Inter, sans-serif', fontWeight: '700' }}>30% OFF</span><img src="src\images\Tenis-relacionado.png" alt="Tenis branco, com detalhes preto e laranja" /></div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', marginRight: '144px', alignItems: 'center' }}> <h4 style={{ fontFamily: 'Inter, sans-serif', fontWeight: '700', fontSize: '24px', color: '#474747', paddingLeft: '30px' }}>Produtos Relacionados</h4>
+                        <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '18px', fontWeight: '400', lineHeight: '34px', color: '#C92071' }}>Ver todos <img src="src\images\Line.png" alt="" /></span></div>
+                    <ul style={{ listStyle: 'none', display: 'flex', gap: '24px' }}>
+                        <li>
+                            <div className='item-relacionado'>
+                                <div style={{ width: '292px', height: '321px', backgroundColor: '#FFFFFF', position: 'relative' }}>
+                                    <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'absolute', marginLeft: '25px', marginTop: '20px', backgroundColor: '#E7FF86', width: '96px', height: '32px', borderRadius: '29px', fontSize: '14px', fontFamily: 'Inter, sans-serif', fontWeight: '700' }}>30% OFF</p>
+                                    <img src="src\images\Tenis-relacionado.png" alt="Tenis branco, com detalhes preto e laranja" /></div>
+                                <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', fontWeight: '700', color: '#8F8F8F' }}>Tênis</p>
+                                <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '24px', fontWeight: '400', color: '#474747' }}>K-Swiss V8 - Masculino</p>
+                                <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '24px', fontWeight: '700', color: '#8F8F8F' }}><s>$200 </s> <span style={{ color: '#1F1F1F' }}>$100</span> </p>
+
+                            </div></li>
+
+                        <li>
+                            <div className='item-relacionado'>
+                                <div style={{ width: '292px', height: '321px', backgroundColor: '#FFFFFF', position: 'relative' }}>
+                                    <p style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'absolute', marginLeft: '25px', marginTop: '20px', backgroundColor: '#E7FF86', width: '96px', height: '32px', borderRadius: '29px', fontSize: '14px', fontFamily: 'Inter, sans-serif', fontWeight: '700' }}>30% OFF</p><img src="src\images\Tenis-relacionado.png" alt="Tenis branco, com detalhes preto e laranja" /></div>
+                                <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', fontWeight: '700', color: '#8F8F8F' }}>Tênis</p>
+                                <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '24px', fontWeight: '400', color: '#474747' }}>K-Swiss V8 - Masculino</p>
+                                <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '24px', fontWeight: '700', color: '#8F8F8F' }}><s>$200 </s> <span style={{ color: '#1F1F1F' }}>$100</span> </p>
+
+                            </div>
                         </li>
-                        <li><div style={{ width: '292px', height: '321px', backgroundColor: '#FFFFFF' }}><img src="src\images\Tenis-relacionado.png" alt="Tenis branco, com detalhes preto e laranja" /></div></li>
-                        <li><div style={{ width: '292px', height: '321px', backgroundColor: '#FFFFFF' }}><img src="src\images\Tenis-relacionado.png" alt="Tenis branco, com detalhes preto e laranja" /></div></li>
+
+                        <li>
+                            <div className='item-relacionado'>
+                                <div style={{ width: '292px', height: '321px', backgroundColor: '#FFFFFF' }}>
+                                    <img src="src\images\Tenis-relacionado.png" alt="Tenis branco, com detalhes preto e laranja" />
+                                </div>
+                                <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', fontWeight: '700', color: '#8F8F8F' }}>Tênis</p>
+                                <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '24px', fontWeight: '400', color: '#474747' }}>K-Swiss V8 - Masculino</p>
+                                <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '24px', fontWeight: '700', color: '#8F8F8F' }}><s>$200 </s> <span style={{ color: '#1F1F1F' }}>$100</span> </p>
+
+                            </div>
+
+                        </li>
+
+                        <li>
+                            <div className='item-relacionado'>
+                                <div style={{ width: '292px', height: '321px', backgroundColor: '#FFFFFF' }}>
+                                    <img src="src\images\Tenis-relacionado.png" alt="Tenis branco, com detalhes preto e laranja" />
+                                </div>
+                                <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '12px', fontWeight: '700', color: '#8F8F8F' }}>Tênis</p>
+                                <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '24px', fontWeight: '400', color: '#474747' }}>K-Swiss V8 - Masculino</p>
+                                <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '24px', fontWeight: '700', color: '#8F8F8F' }}><s>$200 </s> <span style={{ color: '#1F1F1F' }}>$100</span> </p>
+
+                            </div>
+                        </li>
                     </ul>
                 </section>
             </main>
