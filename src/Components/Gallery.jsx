@@ -1,11 +1,12 @@
-import { Carousel } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 const Gallery = () => {
-
     return (
         <>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', padding: '20px', backgroundColor: "light-gray-3" }}>
+        import { Carousel } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', padding: '20px', backgroundColor: "#F5F5F5" }}>
                 <div style={{ width: '100%' }}>
                     <Carousel controls={false}>
                         <Carousel.Item>
@@ -47,8 +48,11 @@ const Gallery = () => {
                 </div>
             </div>
 
+
+
+
         </>
     );
 }
-
+ 
 export default Gallery;
