@@ -1,6 +1,12 @@
 import '../css/style.css'
+import { useState } from 'react';
 
 const ProdutoDetalhado = () => {
+    const [bgColor, setBgColor] = useState('#E2E3FF')
+
+    const changeColor = (color) => {
+        setBgColor(color)
+    }
     return (
         <>
             <main style={{ backgroundColor: '#F5F5F5', height: 'auto', marginTop: '20px', paddingLeft: '100px' }}>
@@ -13,25 +19,25 @@ const ProdutoDetalhado = () => {
                 </ul></nav>
                 <section className="painel-produtos" style={{ display: 'flex' }}>
                     <div className="tenis">
-                        <div className="tenis-principal tenis-1" style={{ width: '700px', height: '471px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginLeft: '30px' }}>
+                        <div className="tenis-principal" style={{ width: '700px', height: '471px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginLeft: '30px', backgroundColor: bgColor }}>
                             <img src="src\images\Vector 2.png" alt="Seta Esquerda" className="vector-1" style={{ width: '11px', height: '22px', marginLeft: '10px' }} />
                             <img src="src\images\tenis-details-big.png" alt="Tenis Modelo" style={{ width: '500px', height: '248px' }} />
                             <img src="src\images\Vector 1.png" alt="Seta Direita" className="vector-2" style={{ width: '11px', height: '22px', marginRight: '10px' }} />
                         </div>
                         <ul className="tipos-de-tenis" style={{ listStyle: 'none', display: 'flex', gap: '28px' }}>
-                            <li><div className="tenis-1" style={{ marginTop: '20px', width: '118px', height: '50px', borderRadius: '4px' }}>
+                            <li><div className="tenis-1" onClick={() => { changeColor('#E2E3FF') }} style={{ marginTop: '20px', width: '118px', height: '50px', borderRadius: '4px', cursor: 'pointer' }}>
                                 <img src="src\images\tenis-details-smart.png" alt="" style={{ marginTop: '6px', marginLeft: '15px' }} />
                             </div></li>
-                            <li><div className="tenis-2" style={{ marginTop: '20px', width: '118px', height: '50px', borderRadius: '4px' }}>
+                            <li><div className="tenis-2" onClick={() => { changeColor('#FFE8BC') }} style={{ marginTop: '20px', width: '118px', height: '50px', borderRadius: '4px', cursor: 'pointer' }}>
                                 <img src="src\images\tenis-details-smart.png" alt="" style={{ marginTop: '6px', marginLeft: '15px' }} />
                             </div></li>
-                            <li><div className="tenis-3" style={{ marginTop: '20px', width: '118px', height: '50px' }}>
+                            <li><div className="tenis-3" onClick={() => { changeColor('#FFC0BC') }} style={{ marginTop: '20px', width: '118px', height: '50px', cursor: 'pointer' }}>
                                 <img src="src\images\tenis-details-smart.png" alt="" style={{ marginTop: '6px', marginLeft: '15px' }} />
                             </div></li>
-                            <li><div className="tenis-4" style={{ marginTop: '20px', width: '118px', height: '50px', borderRadius: '4px' }}>
+                            <li><div className="tenis-4" onClick={() => { changeColor('#DEC699') }} style={{ marginTop: '20px', width: '118px', height: '50px', borderRadius: '4px', cursor: 'pointer' }}>
                                 <img src="src\images\tenis-details-smart.png" alt="" style={{ marginTop: '6px', marginLeft: '15px' }} />
                             </div></li>
-                            <li><div className="tenis-5" style={{ marginTop: '20px', width: '118px', height: '50px', borderRadius: '4px' }}>
+                            <li><div className="tenis-5" onClick={() => { changeColor('#E8DFCF') }} style={{ marginTop: '20px', width: '118px', height: '50px', borderRadius: '4px', cursor: 'pointer' }}>
                                 <img src="src\images\tenis-details-smart.png" alt="" style={{ marginTop: '6px', marginLeft: '15px' }} />
                             </div></li>
                         </ul>
