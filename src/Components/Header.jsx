@@ -1,7 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+
+import Logo from "./Logo";
+import { Link } from 'react-router-dom';
+
+
 import { Logo1 } from "./Logo";
 //aqui alterei a logo, apesar de ter deixado a mesma imagem que já estava anteriormente
+
 
 const Header = () => {
     return (
@@ -11,7 +17,11 @@ const Header = () => {
             <div style={{ display: 'flex', textAlign: 'center', justifyContent: 'space-around', padding: '25px' }} >
 
 
+
+               
+
                 <Logo1 />
+
 
                 <div className="d-flex mb-3" style={{ width: '559px', height: '60' }}>
                     <input
@@ -30,14 +40,18 @@ const Header = () => {
 
 
 
+
                 <button className="btn" style={{ backgroundColor: '#C92071', color: 'white', borderColor: '#C92071', width: '114px', height: '40px', fontWeight: 'bold', fontSize: '14px' }}>Entrar</button>
+
 
 
                 <img src="src\images\mini-cart.svg" alt="mini-cart" />
             </div>
-            <ul style={{ display: 'flex', alignItems: 'flex-start', gap: '20px', listStyle: 'none', textDecoration: 'underline' }} >
-                <li>Home</li>
-                <li>Produtos</li>
+
+            <ul style={{ display: 'flex', alignItems: 'flex-start', gap: '20px', listStyle: 'none' }} >
+                <li><Link to={"/"}>Home</Link></li>
+                <li><Link to={"/produtos"}>Produtos</Link></li>
+
                 <li>Categoria</li>
                 <li>Meus pedidos</li>
             </ul>

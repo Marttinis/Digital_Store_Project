@@ -1,8 +1,12 @@
+
 import { Logo2 } from "./Logo";
+
 
 const Footer = () => {
     return (
         <>
+
+
             <footer style={{ backgroundColor: '#1f1f1f', height: '540px' }}>
                 <div style={{ display: 'flex' }}>
                     <div className="descricao-footer" style={{ marginLeft: '104px' }}>
@@ -54,6 +58,7 @@ const Footer = () => {
                 <p style={{ fontFamily: 'Inter', color: 'white', marginLeft: '600px' }}> &#169; 2024 Digital College</p>
 
             </footer>
+
 
 
         </>

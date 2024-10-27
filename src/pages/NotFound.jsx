@@ -1,13 +1,11 @@
-
 import Layout from "../PageLayout/Layout";
 
-const ProductViewPage = () => {
+const NotFound = () => {
     return (
         <Layout>
-          <h1>Ver produto</h1>
+        <h1>Pagina não encontrada</h1>
         </Layout>
-
     );
 }
  
-export default ProductViewPage;
+export default NotFound;
