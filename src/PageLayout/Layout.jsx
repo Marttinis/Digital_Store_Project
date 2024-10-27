@@ -12,6 +12,7 @@ const Layout = ({ children }) => {
       <Header />
 
       {/* Conteúdo dinâmico das páginas */}
+
       {children} 
 
       {/* Componente do rodapé */}
