@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+import ProdutoDetalhado from '../Components/ProductDetails.jsx';
 
 
 
@@ -12,8 +13,8 @@ const Layout = ({ children }) => {
       <Header />
 
       {/* Conteúdo dinâmico das páginas */}
-
-      {children} 
+      {children}
+      <ProdutoDetalhado />
 
       {/* Componente do rodapé */}
       <Footer />
