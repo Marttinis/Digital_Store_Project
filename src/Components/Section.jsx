@@ -32,7 +32,7 @@ const Section = ({ title, titleAlign = 'left', link, children }) => {
                 <h2 style={styles.title}>{title}</h2>
                 {link && (
                     <a href={link.href} style={styles.link}>
-                        {link.text}<i class="bi bi-arrow-right"></i>
+                        {link.text}<i className="bi bi-arrow-right"></i>
                     </a>
 
                 )}
