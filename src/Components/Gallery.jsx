@@ -1,33 +1,68 @@
-const Gallery = () => {
-    
-    //funções para passar pelas setas 
-  const goNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % banners.length)
-  }
-  const goPrev = () => {
-    setCurrentIndex((prevIndex) =>{
-      return prevIndex === 0 ? banners.length -1 : prevIndex - 1
-    })
-  }
-  const goToslide = (index) => {
-    setCurrentIndex(index)
-  }
-  //autoplay carousel home
-  useEffect(() => {
-    const interval = setInterval(() => {
-      goNext()
-    }, 4000)
-    return() => clearInterval(interval)
-  }, [])
-    
-    
-    
-    
-    return (
-        <div>
-            
-        </div>
-    );
-}
+import { useState } from 'react';
+import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+// import ExampleCarouselImage from '';
 
+
+// function ControlledCarousel() {
+//   const [index, setIndex] = useState(0);
+
+//   const handleSelect = (selectedIndex) => {
+//     setIndex(selectedIndex);
+//   };
+// }
+
+
+
+
+
+
+
+const Gallery = ({className, width, height, radius, showThumbs = '117px 95px', images}) => {
+  return (
+    <div>
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="First slide"
+            // style={imgStyle}
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://images.pexels.com/photos/637076/pexels-photo-637076.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Second slide"
+            // style={imgStyle}
+          />
+          <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Third slide"
+            // style={imgStyle}
+          />
+          <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </div>
+    
+    
+  );
+}
+ 
 export default Gallery;
