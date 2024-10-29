@@ -1,5 +1,6 @@
 import CircleOption from "../Components/CircleOpition";
 import Gallery from "../Components/Gallery";
+import ProductCard from "../Components/ProductCard";
 
 import Section from "../Components/Section";
 import Layout from "../PageLayout/Layout";
@@ -8,7 +9,7 @@ import Layout from "../PageLayout/Layout";
 const HomePage = () => {
   return (
     <Layout>
-      <Gallery />
+      {/* <Gallery /> */}
      
       <main>
         <div>
@@ -43,6 +44,7 @@ const HomePage = () => {
 
           </Section>
         </div>
+        <ProductCard />
       </main>
 
     </Layout>
