@@ -1,68 +1,110 @@
-import { useState } from 'react';
-import React from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-// import ExampleCarouselImage from '';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import '../css/Gallery.css';
+import ArrowRight from '../images/arrow-right.svg';
+import ArrowLeft from '../images/arrow-left.svg';
 
+const Gallery = ({ className, width, height, radius, showOverlay, showThumbs, showGuide, images }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-// function ControlledCarousel() {
-//   const [index, setIndex] = useState(0);
+  // Lida com mudança de imagem ao clicar nas setas
+  const goToNextImage = () => {
+    if (currentIndex < images.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
 
-//   const handleSelect = (selectedIndex) => {
-//     setIndex(selectedIndex);
-//   };
-// }
+  const goToPreviousImage = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
 
+  // Lida com seleção de miniaturas
+  const selectImage = (index) => {
+    setCurrentIndex(index);
+  };
 
-
-
-
-
-
-const Gallery = ({className, width, height, radius, showThumbs = '117px 95px', images}) => {
   return (
-    <div>
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt="First slide"
-            // style={imgStyle}
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://images.pexels.com/photos/637076/pexels-photo-637076.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt="Second slide"
-            // style={imgStyle}
-          />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt="Third slide"
-            // style={imgStyle}
-          />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+    <div className={`gallery ${className}`} style={{ width }}>
+      <div className="gallery__slider" style={{ height }}>
+        <img
+          src={images[currentIndex].src}
+          alt={`Imagem ${currentIndex + 1}`}
+          className="gallery__image"
+          style={{ borderRadius: radius }}
+        />
+
+        {showOverlay &&(
+        <div className="gallery__overlay">
+          <h6 id="gallery_legend" >Melhores ofertas personalizadas</h6>
+          <h2 className="gallery__title">Queima de <br /> estoque Nike 🔥</h2>
+          <p className="gallery__description">
+            Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.
+          </p>
+          <button className="gallery__button">Ver Ofertas</button>
+          
+        </div>
+        )}
+
+
+        <button
+          className="gallery__arrow gallery__arrow--left"
+          onClick={goToPreviousImage}
+          disabled={currentIndex === 0}
+        >
+          <img src={ArrowLeft} alt="Seta para a esquerda" />
+        </button>
+        <button
+          className="gallery__arrow gallery__arrow--right"
+          onClick={goToNextImage}
+          disabled={currentIndex === images.length - 1}
+        >
+          <img src={ArrowRight} alt="Seta para a direita" />
+        </button>
+
+      </div>
+      {showThumbs && (
+        <div className="gallery__thumbnails">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image.src}
+              alt={`Miniatura ${index + 1}`}
+              onClick={() => selectImage(index)}
+              className={`gallery__thumbnail ${index === currentIndex ? 'gallery__thumbnail--selected' : ''}`}
+              style={{ borderRadius: radius }}
+            />
+          ))}
+        </div>
+      )}
+      {showGuide && (
+        <div className="gallery__circles">
+          {images.map((_, index) => (
+            <span
+              key={index}
+              className={`gallery__circle ${index === currentIndex ? 'gallery__circle--active' : ''}`}
+              onClick={() => selectImage(index)}
+            ></span>
+          ))}
+        </div>
+      )}
     </div>
-    
-    
   );
-}
- 
+};
+
+// Tipagem para garantir que as propriedades recebam o valor correto
+Gallery.propTypes = {
+  className: PropTypes.string,
+  width: PropTypes.string,
+  height: PropTypes.string,
+  radius: PropTypes.string,
+  showThumbs: PropTypes.bool,
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
 export default Gallery;

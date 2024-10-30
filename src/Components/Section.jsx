@@ -19,6 +19,7 @@ const styles = {
         alignItems: 'center',
         justifyContent: align === 'center' ? 'center' : 'flex-start',
         gap: '8px',
+        backgroundColor: '#E5E5E5',
     }),
 };
 
@@ -27,7 +28,7 @@ const styles = {
 
 const Section = ({ title, titleAlign = 'left', link, children }) => {
     return (
-        <section>
+        <section style={{backgroundColor: '#F5F5F5'}}> 
             <div style={styles.container(titleAlign)}>
                 <h2 style={styles.title}>{title}</h2>
                 {link && (
