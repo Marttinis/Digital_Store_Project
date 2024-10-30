@@ -49,8 +49,9 @@ const Header = () => {
             </div>
 
             <ul style={{ display: 'flex', alignItems: 'flex-start', gap: '20px', listStyle: 'none' }} >
-                <li><Link to={"/"}>Home</Link></li>
-                <li><Link to={"/produtos"}>Produtos</Link></li>
+
+                <li><Link style={{color:'#C92071'}} to={"/"}>Home</Link></li>
+                <li><Link style={{color:'#C92071'}} to={"/produtos"}>Produtos</Link></li>
 
                 <li>Categoria</li>
                 <li>Meus pedidos</li>
