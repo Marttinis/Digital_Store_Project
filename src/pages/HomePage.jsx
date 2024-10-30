@@ -8,7 +8,7 @@ import Section from "../Components/Section";
 import Layout from "../PageLayout/Layout";
 
 
-<<<<<<< HEAD
+
 const products = [
   {
       image: "src/images/Layer 1aa 2.svg",
@@ -73,8 +73,7 @@ const products = [
 
 
 
-=======
->>>>>>> 6f512e2391deae9176b088accbe2e6b74be2d28b
+
 
 const HomePage = () => {
   return (
