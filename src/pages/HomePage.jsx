@@ -1,3 +1,4 @@
+
 import CircleOption from "../Components/CircleOpition";
 import Gallery from "../Components/Gallery";
 import ProductCard from "../Components/ProductCard";
@@ -7,6 +8,7 @@ import Section from "../Components/Section";
 import Layout from "../PageLayout/Layout";
 
 
+<<<<<<< HEAD
 const products = [
   {
       image: "src/images/Layer 1aa 2.svg",
@@ -71,9 +73,12 @@ const products = [
 
 
 
+=======
+>>>>>>> 6f512e2391deae9176b088accbe2e6b74be2d28b
 
 const HomePage = () => {
   return (
+
     <Layout>
       <Gallery
         className="custom-gallery"
@@ -135,6 +140,7 @@ const HomePage = () => {
       </main>
 
     </Layout>
+
   );
 }
 

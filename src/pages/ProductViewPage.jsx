@@ -1,3 +1,4 @@
+
 import Layout from "../PageLayout/Layout";
 
 const ProductViewPage = () => {
@@ -5,6 +6,7 @@ const ProductViewPage = () => {
         <Layout>
           <h1>Ver produto</h1>
         </Layout>
+
     );
 }
  
