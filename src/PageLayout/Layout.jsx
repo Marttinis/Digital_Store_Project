@@ -4,6 +4,7 @@ import Footer from '../Components/Footer';
 
 
 
+
 // Definindo o componente de layout
 const Layout = ({ children }) => {
   return (
@@ -12,13 +13,14 @@ const Layout = ({ children }) => {
       <Header />
 
       {/* Conteúdo dinâmico das páginas */}
-
-      {children} 
+      {children}
+      
 
       {/* Componente do rodapé */}
       <Footer />
     </div>
   );
 };
+//teste para o Permission denied
 
 export default Layout;
