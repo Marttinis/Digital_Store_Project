@@ -8,9 +8,42 @@ import Section from "../Components/Section";
 import Layout from "../PageLayout/Layout";
 
 
-<<<<<<< HEAD
+
 const products = [
   {
+      id: "1",
+      image: "src/images/Layer 1aa 2.svg",
+      name: "K-Swiss V8 - Masculino",
+      type:"tênis",
+      price: 200,
+      priceDiscount: 100
+  },
+  {
+      id: "1",
+      image: "src/images/Layer 1aa 2.svg",
+      name: "K-Swiss V8 - Masculino",
+      type:"tênis",
+      price: 200,
+      priceDiscount: 100
+  },
+  {
+      id: "1",    
+      image: "src/images/Layer 1aa 2.svg",
+      name: "K-Swiss V8 - Masculino",
+      type:"tênis",
+      price: 200,
+      priceDiscount: 100
+  },
+  {
+      id: "1",    
+      image: "src/images/Layer 1aa 2.svg",
+      name: "K-Swiss V8 - Masculino",
+      type:"tênis",
+      price: 200,
+      priceDiscount: 100
+  },
+  {
+      id: "1",
       image: "src/images/Layer 1aa 2.svg",
       name: "K-Swiss V8 - Masculino",
       type:"tênis",
@@ -25,6 +58,7 @@ const products = [
       priceDiscount: 100
   },
   {
+      id: "1",
       image: "src/images/Layer 1aa 2.svg",
       name: "K-Swiss V8 - Masculino",
       type:"tênis",
@@ -32,34 +66,7 @@ const products = [
       priceDiscount: 100
   },
   {
-      image: "src/images/Layer 1aa 2.svg",
-      name: "K-Swiss V8 - Masculino",
-      type:"tênis",
-      price: 200,
-      priceDiscount: 100
-  },
-  {
-      image: "src/images/Layer 1aa 2.svg",
-      name: "K-Swiss V8 - Masculino",
-      type:"tênis",
-      price: 200,
-      priceDiscount: 100
-  },
-  {
-      image: "src/images/Layer 1aa 2.svg",
-      name: "K-Swiss V8 - Masculino",
-      type:"tênis",
-      price: 200,
-      priceDiscount: 100
-  },
-  {
-      image: "src/images/Layer 1aa 2.svg",
-      name: "K-Swiss V8 - Masculino",
-      type:"tênis",
-      price: 200,
-      priceDiscount: 100
-  },
-  {
+      id: "1",
       image: "src/images/Layer 1aa 2.svg",
       name: "K-Swiss V8 - Masculino",
       type:"tênis",
@@ -73,8 +80,7 @@ const products = [
 
 
 
-=======
->>>>>>> 6f512e2391deae9176b088accbe2e6b74be2d28b
+
 
 const HomePage = () => {
   return (
@@ -103,7 +109,7 @@ const HomePage = () => {
       />
 
 
-      <main>
+      <main style={{backgroundColor:'#E5E5E5'}}>
         <div>
           <Section
             title="Coleções em destaque"
@@ -132,7 +138,7 @@ const HomePage = () => {
           <Section
             title="Produtos em alta"
             titleAlign="left"
-            link={{ text: 'Ver todos', href: 'https://redirect.link' }}>
+            link={{ text: 'Ver todos', href: '/produtos' }}>
 
           </Section>
         </div>

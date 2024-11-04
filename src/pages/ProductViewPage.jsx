@@ -1,13 +1,110 @@
 
+import BuyBox from "../Components/BuyBox";
+import Gallery from "../Components/Gallery";
+import ProdutoDetalhado from "../Components/ProductDetails";
+import ProductListing from "../Components/ProductListing";
+import ProductOptions from "../Components/ProductOptions";
+import Section from "../Components/Section";
 import Layout from "../PageLayout/Layout";
 
-const ProductViewPage = () => {
-    return (
-        <Layout>
-          <h1>Ver produto</h1>
-        </Layout>
 
-    );
+
+const products = [
+  {
+    id: "1",
+    image: "src/images/Layer 1aa 2.svg",
+    name: "K-Swiss V8 - Masculino",
+    type: "tênis",
+    price: 200,
+    priceDiscount: 100
+  },
+  {
+    id: "1",
+    image: "src/images/Layer 1aa 2.svg",
+    name: "K-Swiss V8 - Masculino",
+    type: "tênis",
+    price: 200,
+    priceDiscount: 100
+  },
+  {
+    id: "1",
+    image: "src/images/Layer 1aa 2.svg",
+    name: "K-Swiss V8 - Masculino",
+    type: "tênis",
+    price: 200,
+    priceDiscount: 100
+  },
+  {
+    id: "1",
+    image: "src/images/Layer 1aa 2.svg",
+    name: "K-Swiss V8 - Masculino",
+    type: "tênis",
+    price: 200,
+    priceDiscount: 100
+  }
+]
+
+
+
+
+
+
+
+const ProductViewPage = () => {
+  return (
+    <Layout>
+      <main>
+        <div style={{ display: 'flex' }}>
+          <Gallery
+            className="custom-gallery"
+            width="700px"
+            height="570px"
+            radius="4px"
+            showThumbs
+
+            images={[
+              { src: 'src/images/tenis-details-big.png' },
+              { src: 'src/images/home-slide-2.jpeg' },
+              { src: 'src/images/home-slide-3.jpeg' },
+              { src: 'src/images/home-slide-4.jpeg' },
+              { src: 'src/images/home-slide-5.jpeg' },
+
+
+
+            ]}
+
+
+          />
+          <BuyBox
+            name="Tênis Nike Revolution 6 Next Nature Masculino"
+            reference="Casual | Nike | REF:38416711s"
+            price="219"
+            priceDiscount="100"
+            descripiton="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum veritatis hic, rerum dolorem culpa voluptas. Aliquid quaerat perferendis eligendi ratione numquam possimus ab! Quod, perferendis dolores quas deleniti earum asperiores."
+          >
+            <ProductOptions
+
+
+              options={["39", "41", "42"]}
+              radius="4px"
+              shape="square"
+              type="text"
+            />
+          </BuyBox>
+        </div>
+        <Section
+          title="Produtos Relacionados"
+          titleAlign="left"
+          link={{ text: 'Ver todos', href: '/produtos' }}>
+
+          <ProductListing products={products} />
+        </Section>
+
+
+      </main>
+    </Layout>
+
+  );
 }
- 
+
 export default ProductViewPage;

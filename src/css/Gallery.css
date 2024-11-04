@@ -8,9 +8,11 @@
 }
 
 .gallery__image {
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gallery__overlay {
@@ -81,13 +83,13 @@
 .gallery__thumbnails {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 1px;
 }
 
 .gallery__thumbnail {
     width: 117px;
     height: 95px;
-    margin: 0 5px;
+    margin: 1px;
     cursor: pointer;
     transition: border 0.3s;
 }

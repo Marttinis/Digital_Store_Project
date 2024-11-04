@@ -20,7 +20,7 @@ const Header = () => {
 
                
 
-                <Logo1 />
+                <Link to={'/'}> <Logo1 /> </Link> 
 
 
                 <div className="d-flex mb-3" style={{ width: '559px', height: '60' }}>
