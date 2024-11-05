@@ -1,6 +1,7 @@
 
 import CircleOption from "../Components/CircleOpition";
 import Gallery from "../Components/Gallery";
+import AirJordan from "../Components/OfertaEspecial";
 import ProductCard from "../Components/ProductCard";
 import ProductListing from "../Components/ProductListing";
 
@@ -86,6 +87,8 @@ const HomePage = () => {
   return (
 
     <Layout>
+
+      <main style={{ backgroundColor: '#F5F5F5' }}>
       <Gallery
         className="custom-gallery"
         width="1440px"
@@ -125,6 +128,7 @@ const HomePage = () => {
           </Section>
         </div>
 
+        <div style={{ paddingTop: '100px' }}>
         <div style={{ padding: '100px' }}>
           <Section
             title="Coleções em destaque"
@@ -134,10 +138,15 @@ const HomePage = () => {
           </Section>
         </div>
 
-        <div>
+        <div style={{ display: 'flex', justifyContent: 'space-betweens', width: '100%' }}>
           <Section
             title="Produtos em alta"
             titleAlign="left"
+            link={{ text: 'Ver todos', href: 'https://redirect.link' }}>
+
+          </Section>
+        </div>
+        <AirJordan />
             link={{ text: 'Ver todos', href: '/produtos' }}>
 
           </Section>
@@ -146,6 +155,7 @@ const HomePage = () => {
       </main>
 
     </Layout>
+
 
   );
 }

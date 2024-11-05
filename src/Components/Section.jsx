@@ -1,24 +1,25 @@
-
-
 // Define o estilo básico para o título e o link
 const styles = {
     title: {
         color: '#474747',
         fontSize: '24px',
+        display: 'flex',
+        justifyContent: 'center',
+        width: '1200px'
 
 
     },
     link: {
         color: ' #C92071',
         fontSize: '18px',
-        marginLeft: 'auto',
         textDecoration: 'none',
     },
     container: (align) => ({
         display: 'flex',
         alignItems: 'center',
-        justifyContent: align === 'center' ? 'center' : 'flex-start',
         gap: '8px',
+        width: '1200px',
+        justifyContent: 'space-between',
         backgroundColor: '#E5E5E5',
     }),
 };
@@ -28,6 +29,8 @@ const styles = {
 
 const Section = ({ title, titleAlign = 'left', link, children }) => {
     return (
+        <section style={{ marginLeft: '100px' }}>
+
         <section style={{backgroundColor: '#F5F5F5'}}> 
             <div style={styles.container(titleAlign)}>
                 <h2 style={styles.title}>{title}</h2>
