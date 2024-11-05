@@ -20,8 +20,8 @@ const Header = () => {
 
 
 
+                <Link to={'/'}> <Logo1 /> </Link> 
 
-                    <Logo1 />
 
 
                     <div className="d-flex mb-3" style={{ width: '559px', height: '60', display: 'flex', alignItems: 'center' }}>
@@ -48,6 +48,7 @@ const Header = () => {
 
 
                     <img src="src\images\mini-cart.svg" alt="mini-cart" />
+
 
                 </div>
                 <ul style={{ display: 'flex', alignItems: 'flex-start', gap: '20px', listStyle: 'none', left: '0px' }} >
