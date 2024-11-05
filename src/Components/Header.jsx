@@ -13,48 +13,51 @@ const Header = () => {
     return (
 
         <>
+            <div style={{ marginLeft: '100px', display: 'flex', flexDirection: 'column', gap: '48px' }}>
 
-            <div style={{ display: 'flex', textAlign: 'center', justifyContent: 'space-around', padding: '25px' }} >
-
-
-
-               
-
-                <Logo1 />
+                <div style={{ display: 'flex', textAlign: 'center', justifyContent: 'space-between', paddingTop: '25px', alignItems: 'center', marginRight: '60px', marginBottom: '29px' }} >
 
 
-                <div className="d-flex mb-3" style={{ width: '559px', height: '60' }}>
-                    <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Pesquisar produto..."
-                        aria-label="Pesquisar"
-                        aria-describedby="button-addon2"
-                    />
-                    <button className="btn btn-outline-secondary" type="button" id="button-addon2">
-                        <i className="bi bi-search"></i> {/* Ícone de lupa */}
-                    </button>
+
+
+
+                    <Logo1 />
+
+
+                    <div className="d-flex mb-3" style={{ width: '559px', height: '60', display: 'flex', alignItems: 'center' }}>
+                        <input
+                            type="text"
+                            className="form-control"
+                            placeholder="Pesquisar produto..."
+                            aria-label="Pesquisar"
+                            aria-describedby="button-addon2"
+                            style={{ position: 'relative' }}
+                        />
+                        <button className="btn btn-outline-secondary" type="button" id="button-addon2" style={{ position: 'absolute', right: '378px' }}>
+                            <i className="bi bi-search"></i> {/* Ícone de lupa */}
+                        </button>
+                    </div>
+
+                    <a href="" style={{ listStyle: 'none', color: 'black', fontSize: '16px', width: '102', height: '28' }} >Cadastre-se</a>
+
+
+
+
+                    <button className="btn" style={{ backgroundColor: '#C92071', color: 'white', borderColor: '#C92071', width: '114px', height: '40px', fontWeight: 'bold', fontSize: '14px' }}>Entrar</button>
+
+
+
+                    <img src="src\images\mini-cart.svg" alt="mini-cart" />
+
                 </div>
+                <ul style={{ display: 'flex', alignItems: 'flex-start', gap: '20px', listStyle: 'none', left: '0px' }} >
+                    <li><Link to={"/"} style={{ textDecoration: 'none', color: 'inherit' }}>Home</Link></li>
+                    <li><Link to={"/produtos"} style={{ textDecoration: 'none', color: 'inherit' }}>Produtos</Link></li>
 
-                <a href="" style={{ listStyle: 'none', color: 'black', fontSize: '16px', width: '102', height: '28' }} >Cadastre-se</a>
-
-
-
-
-                <button className="btn" style={{ backgroundColor: '#C92071', color: 'white', borderColor: '#C92071', width: '114px', height: '40px', fontWeight: 'bold', fontSize: '14px' }}>Entrar</button>
-
-
-
-                <img src="src\images\mini-cart.svg" alt="mini-cart" />
+                    <li>Categoria</li>
+                    <li>Meus Pedidos</li>
+                </ul>
             </div>
-
-            <ul style={{ display: 'flex', alignItems: 'flex-start', gap: '20px', listStyle: 'none' }} >
-                <li><Link to={"/"}>Home</Link></li>
-                <li><Link to={"/produtos"}>Produtos</Link></li>
-
-                <li>Categoria</li>
-                <li>Meus pedidos</li>
-            </ul>
         </>
     );
 }
