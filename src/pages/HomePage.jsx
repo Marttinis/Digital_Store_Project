@@ -2,8 +2,84 @@
 import CircleOption from "../Components/CircleOpition";
 import Gallery from "../Components/Gallery";
 import AirJordan from "../Components/OfertaEspecial";
+import ProductCard from "../Components/ProductCard";
+import ProductListing from "../Components/ProductListing";
+
 import Section from "../Components/Section";
 import Layout from "../PageLayout/Layout";
+
+
+
+const products = [
+  {
+      id: "1",
+      image: "src/images/Layer 1aa 2.svg",
+      name: "K-Swiss V8 - Masculino",
+      type:"tênis",
+      price: 200,
+      priceDiscount: 100
+  },
+  {
+      id: "1",
+      image: "src/images/Layer 1aa 2.svg",
+      name: "K-Swiss V8 - Masculino",
+      type:"tênis",
+      price: 200,
+      priceDiscount: 100
+  },
+  {
+      id: "1",    
+      image: "src/images/Layer 1aa 2.svg",
+      name: "K-Swiss V8 - Masculino",
+      type:"tênis",
+      price: 200,
+      priceDiscount: 100
+  },
+  {
+      id: "1",    
+      image: "src/images/Layer 1aa 2.svg",
+      name: "K-Swiss V8 - Masculino",
+      type:"tênis",
+      price: 200,
+      priceDiscount: 100
+  },
+  {
+      id: "1",
+      image: "src/images/Layer 1aa 2.svg",
+      name: "K-Swiss V8 - Masculino",
+      type:"tênis",
+      price: 200,
+      priceDiscount: 100
+  },
+  {
+      image: "src/images/Layer 1aa 2.svg",
+      name: "K-Swiss V8 - Masculino",
+      type:"tênis",
+      price: 200,
+      priceDiscount: 100
+  },
+  {
+      id: "1",
+      image: "src/images/Layer 1aa 2.svg",
+      name: "K-Swiss V8 - Masculino",
+      type:"tênis",
+      price: 200,
+      priceDiscount: 100
+  },
+  {
+      id: "1",
+      image: "src/images/Layer 1aa 2.svg",
+      name: "K-Swiss V8 - Masculino",
+      type:"tênis",
+      price: 200,
+      priceDiscount: 100
+  }
+  
+];
+
+
+
+
 
 
 
@@ -13,6 +89,30 @@ const HomePage = () => {
     <Layout>
 
       <main style={{ backgroundColor: '#F5F5F5' }}>
+      <Gallery
+        className="custom-gallery"
+        width="1440px"
+        height="681px"
+        radius="4px"
+        showOverlay
+        // showThumbs
+        showGuide
+        images={[
+          { src: 'src/images/Home.png' },
+          { src: 'src/images/home-slide-2.jpeg' },
+          { src: 'src/images/home-slide-3.jpeg' },
+          { src: 'src/images/home-slide-4.jpeg' },
+          { src: 'src/images/home-slide-5.jpeg' },
+          { src: 'src/images/home-slide-6.jpeg' },
+          { src: 'src/images/home-slide-7.jpeg' },
+          { src: 'src/images/home-slide-8.jpeg' },
+         
+       
+        ]}
+      />
+
+
+      <main style={{backgroundColor:'#E5E5E5'}}>
         <div>
           <Section
             title="Coleções em destaque"
@@ -29,6 +129,7 @@ const HomePage = () => {
         </div>
 
         <div style={{ paddingTop: '100px' }}>
+        <div style={{ padding: '100px' }}>
           <Section
             title="Coleções em destaque"
             titleAlign="center">
@@ -46,6 +147,11 @@ const HomePage = () => {
           </Section>
         </div>
         <AirJordan />
+            link={{ text: 'Ver todos', href: '/produtos' }}>
+
+          </Section>
+        </div>
+        <ProductListing products={products} />
       </main>
 
     </Layout>
