@@ -1,3 +1,5 @@
+
+
 // Define o estilo básico para o título e o link
 const styles = {
     title: {
@@ -27,6 +29,7 @@ const styles = {
 const Section = ({ title, titleAlign = 'left', link, children }) => {
     return (
         <section style={{ backgroundColor: '#F5F5F5' }}>
+      
             <div style={styles.container(titleAlign)}>
                 <h2 style={styles.title}>{title}</h2>
                 {link && (
