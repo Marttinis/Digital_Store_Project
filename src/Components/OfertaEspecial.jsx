@@ -1,4 +1,4 @@
-const AirJordan = () => {
+const OfertaEspecial = () => {
     return (
         <>
             <section>
@@ -21,4 +21,4 @@ const AirJordan = () => {
     )
 }
 
-export default AirJordan
+export default OfertaEspecial;

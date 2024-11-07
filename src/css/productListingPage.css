@@ -1,13 +1,13 @@
-main{
+main {
     background-color: #E5E5E5;
 }
 
-h5{
+h5 {
     font-size: 16px;
-    
+
 }
 
-h3{
+h3 {
     text-decoration: underline;
 }
 
@@ -15,12 +15,13 @@ h4 {
     font-size: 14px;
     margin: 10px 0 5px;
     font-weight: bold;
-    
-  }
-  
-  input[type="checkbox"], input[type="radio"] {
+
+}
+
+input[type="checkbox"],
+input[type="radio"] {
     margin-right: 5px;
-  }
+}
 
 /* Styles.css */
 input[type="checkbox"] {
@@ -28,30 +29,31 @@ input[type="checkbox"] {
     width: 16px;
     height: 16px;
     border: 2px solid #a1a1a1;
-   
+
     position: relative;
     cursor: pointer;
-  }
-  
-  input[type="checkbox"]:checked {
-    background-color: #C92071; /* Cor de fundo quando marcada */
+}
+
+input[type="checkbox"]:checked {
+    background-color: #C92071;
+    /* Cor de fundo quando marcada */
     border-color: #C92071;
-  }
-  
-  input[type="checkbox"]:checked::before {
+}
+
+input[type="checkbox"]:checked::before {
     /* content: '✔'; Sinal de check */
     color: white;
     position: absolute;
     top: -1px;
     left: 2px;
     font-size: 14px;
-  }
-  
+}
 
 
-  .selecao{
+
+.selecao {
     display: flex;
     justify-content: flex-end;
     padding: 20px;
-    
-  }
+
+}

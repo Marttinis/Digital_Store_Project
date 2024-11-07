@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-import Logo from "./Logo";
 import { Link } from 'react-router-dom';
 
 
@@ -20,7 +19,7 @@ const Header = () => {
 
 
 
-                <Link to={'/'}> <Logo1 /> </Link> 
+                    <Link to={'/'}> <Logo1 /> </Link>
 
 
 
