@@ -82,8 +82,8 @@
 
 .gallery__thumbnails {
     display: flex;
-    justify-content: center;
-    margin-top: 1px;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .gallery__thumbnail {
@@ -95,7 +95,7 @@
 }
 
 .gallery__thumbnail--selected {
-    border: 2px solid var(--primary-color);
+    border: 3px solid #C92071;
 }
 
 .gallery__circles {

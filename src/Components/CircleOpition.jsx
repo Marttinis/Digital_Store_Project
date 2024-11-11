@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CircleOption = () => {
     return (
-        <div className="container my-5">
+        <div className="container my-5" style={{backgroundColor:'#F5F5F5'}}>
             <div className="row text-center">
                 {/* <!-- Item 1 --> */}
                 <div className="col">

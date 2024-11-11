@@ -12,69 +12,69 @@ import Layout from "../PageLayout/Layout";
 
 const products = [
   {
-      id: "1",
-      image: "src/images/Layer 1aa 2.svg",
-      name: "K-Swiss V8 - Masculino",
-      type:"tênis",
-      price: 200,
-      priceDiscount: 100
+    id: "1",
+    image: "src/images/Layer 1aa 2.svg",
+    name: "K-Swiss V8 - Masculino",
+    type: "tênis",
+    price: 200,
+    priceDiscount: 100
   },
   {
-      id: "1",
-      image: "src/images/Layer 1aa 2.svg",
-      name: "K-Swiss V8 - Masculino",
-      type:"tênis",
-      price: 200,
-      priceDiscount: 100
+    id: "1",
+    image: "src/images/Layer 1aa 2.svg",
+    name: "K-Swiss V8 - Masculino",
+    type: "tênis",
+    price: 200,
+    priceDiscount: 100
   },
   {
-      id: "1",    
-      image: "src/images/Layer 1aa 2.svg",
-      name: "K-Swiss V8 - Masculino",
-      type:"tênis",
-      price: 200,
-      priceDiscount: 100
+    id: "1",
+    image: "src/images/Layer 1aa 2.svg",
+    name: "K-Swiss V8 - Masculino",
+    type: "tênis",
+    price: 200,
+    priceDiscount: 100
   },
   {
-      id: "1",    
-      image: "src/images/Layer 1aa 2.svg",
-      name: "K-Swiss V8 - Masculino",
-      type:"tênis",
-      price: 200,
-      priceDiscount: 100
+    id: "1",
+    image: "src/images/Layer 1aa 2.svg",
+    name: "K-Swiss V8 - Masculino",
+    type: "tênis",
+    price: 200,
+    priceDiscount: 100
   },
   {
-      id: "1",
-      image: "src/images/Layer 1aa 2.svg",
-      name: "K-Swiss V8 - Masculino",
-      type:"tênis",
-      price: 200,
-      priceDiscount: 100
+    id: "1",
+    image: "src/images/Layer 1aa 2.svg",
+    name: "K-Swiss V8 - Masculino",
+    type: "tênis",
+    price: 200,
+    priceDiscount: 100
   },
   {
-      image: "src/images/Layer 1aa 2.svg",
-      name: "K-Swiss V8 - Masculino",
-      type:"tênis",
-      price: 200,
-      priceDiscount: 100
+    image: "src/images/Layer 1aa 2.svg",
+    name: "K-Swiss V8 - Masculino",
+    type: "tênis",
+    price: 200,
+    priceDiscount: 100
   },
   {
-      id: "1",
-      image: "src/images/Layer 1aa 2.svg",
-      name: "K-Swiss V8 - Masculino",
-      type:"tênis",
-      price: 200,
-      priceDiscount: 100
+    id: "1",
+    image: "src/images/Layer 1aa 2.svg",
+    name: "K-Swiss V8 - Masculino",
+    type: "tênis",
+    price: 200,
+    priceDiscount: 100
   },
   {
-      id: "1",
-      image: "src/images/Layer 1aa 2.svg",
-      name: "K-Swiss V8 - Masculino",
-      type:"tênis",
-      price: 200,
-      priceDiscount: 100
+    id: "1",
+    image: "src/images/Layer 1aa 2.svg",
+    name: "K-Swiss V8 - Masculino",
+    type: "tênis",
+    price: 200,
+    priceDiscount: 100
   }
-  
+
 ];
 
 
@@ -88,7 +88,7 @@ const HomePage = () => {
 
     <Layout>
 
-      <main style={{ backgroundColor: '#F5F5F5' }}>
+
       <Gallery
         className="custom-gallery"
         width="1440px"
@@ -106,20 +106,20 @@ const HomePage = () => {
           { src: 'src/images/home-slide-6.jpeg' },
           { src: 'src/images/home-slide-7.jpeg' },
           { src: 'src/images/home-slide-8.jpeg' },
-         
-       
+
+
         ]}
       />
 
 
-      <main style={{backgroundColor:'#E5E5E5'}}>
+      <main style={{ backgroundColor: '#E5E5E5' }}>
         <div>
           <Section
             title="Coleções em destaque"
             titleAlign="left"
           // link={{ text: 'Show More', href: 'https://redirect.link' }}
           >
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+            <div style={{ backgroundColor:'#F5F5F5', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
 
               <img style={{ borderRadius: '4px' }} src="public\collection-1.png" alt="collection1" />
               <img style={{ borderRadius: '4px' }} src="public\collection-2.png" alt="collection2" />
@@ -129,35 +129,34 @@ const HomePage = () => {
         </div>
 
         <div style={{ paddingTop: '100px' }}>
-        <div style={{ padding: '100px' }}>
-          <Section
-            title="Coleções em destaque"
-            titleAlign="center">
+          <div style={{ padding: '100px' }}>
+            <Section
+              title="Coleções em destaque"
+              titleAlign="center">
 
-            <CircleOption />
-          </Section>
+              <CircleOption />
+            </Section>
+          </div>
+
+          <div >
+            <Section
+              title="Produtos em alta"
+              titleAlign="left"
+              link={{ text: 'Ver todos', href: 'https://redirect.link' }}>
+
+            </Section>
+          </div>
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'space-betweens', width: '100%' }}>
-          <Section
-            title="Produtos em alta"
-            titleAlign="left"
-            link={{ text: 'Ver todos', href: 'https://redirect.link' }}>
 
-          </Section>
-        </div>
-        <AirJordan />
-            link={{ text: 'Ver todos', href: '/produtos' }}>
-
-          </Section>
-        </div>
         <ProductListing products={products} />
+        <AirJordan />
       </main>
 
     </Layout>
 
 
-  );
-}
+  )
+};
 
 export default HomePage;

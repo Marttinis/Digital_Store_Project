@@ -1,24 +1,48 @@
 .product-options {
-    display: flex;
-    gap: 10px;
-  }
+  display: flex;
+  gap: 15px;
+  background-color: #F5F5F5;
+ 
+}
+#titulo{
+  background-color:#F5F5F5;;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border 0.3s ease;
   
-  .option.square {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: #474747;
-    border-color: black;
-  }
+ 
   
-  .option.circle {
-    width: 31px;
-    height: 31px;
-    border-radius: 50%;
-  }
+}
+
+.square {
+  width: auto;
+  height: 46px;
+  padding: 12px;
   
-  .option.selected {
-    border: 2px solid #C92071;
-  }
   
+}
+
+.circle {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  
+}
+
+.text {
+  color: #CCCCCC;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.color {
+  color: transparent;
+}
+
+

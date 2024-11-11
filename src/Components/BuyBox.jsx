@@ -51,7 +51,7 @@ const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, descripi
                {children}
             </div>
 
-            <button style={{ width: '220px', height: '48px', textTransform: 'uppercase', backgroundColor: '#FFB31F', border: 'none', borderRadius: '11%', color: '#F5F5F5', fontSize: '16px' }}>Comprar</button>
+            <button style={{ width: '220px', height: '48px', textTransform: 'uppercase', backgroundColor: '#FFB31F', border: 'none', borderRadius: '11%', color: '#F5F5F5', fontSize: '16px', marginTop:'25px' }}>Comprar</button>
 
 
         </div>

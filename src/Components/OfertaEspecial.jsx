@@ -2,11 +2,11 @@ const AirJordan = () => {
     return (
         <>
             <section>
-                <div style={{ display: 'flex', gap: '68px', alignItems: 'center', paddingTop: '87px', backgroundColor: 'white' }}>
+                <div style={{ display: 'flex', gap: '68px', alignItems: 'center', paddingTop: '87px', backgroundColor: '#F5F5F5;' }}>
                     <div className="produto">
                         <img src="\src\images\Ellipse 11.png" alt="Ellipse por trás da imagem" style={{ position: 'relative', left: '129px' }} />
                         <div className="imagem-principal">
-                            <img src="\src\images\Laye 1.png" alt="Foto do Air Jordan" style={{ position: 'absolute', top: '1000px', left: '52px' }} />
+                            <img src="\src\images\Laye 1.png" alt="Foto do Air Jordan" style={{ position: 'absolute', top: '2700px', left: '52px' }} />
                         </div>
                     </div>
                     <div className="informacoes-produto" style={{ marginLeft: '150px', width: '589px' }}>
@@ -21,4 +21,4 @@ const AirJordan = () => {
     )
 }
 
-export default AirJordan
+export default AirJordan;

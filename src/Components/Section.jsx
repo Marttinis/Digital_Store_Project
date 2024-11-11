@@ -5,6 +5,8 @@ const styles = {
     title: {
         color: '#474747',
         fontSize: '24px',
+        backgroundColor: '#E5E5E5',
+
 
 
     },
@@ -13,6 +15,7 @@ const styles = {
         fontSize: '18px',
         marginLeft: 'auto',
         textDecoration: 'none',
+        backgroundColor: '#E5E5E5',
     },
     container: (align) => ({
         display: 'flex',

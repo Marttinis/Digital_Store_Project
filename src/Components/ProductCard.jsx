@@ -25,7 +25,7 @@ const styles = {
 
 const ProductCard = ({ id, image, type, name, price, priceDiscount }) => {
     return (
-        <Link to={`/product/${id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link to={`/product`} style={{ textDecoration: 'none', color: 'inherit' }}>
             <Card style={{ width: '18rem' }}>
                 <Card.Img variant="top" src={image} alt={name} />
                 <Card.Body style={{ backgroundColor: '#E5E5E5' }}>
